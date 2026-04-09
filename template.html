@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}} | Manuel Teixeira Gomes | Repositório Digital</title>
+  <meta name="description" content="Repositório digital dedicado a Manuel Teixeira Gomes, escritor e Presidente da República Portuguesa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{BASE}}css/style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="{{BASE}}index.html" class="site-title">MANUEL TEIXEIRA GOMES</a>
+      <a href="{{BASE}}index.html" class="site-subtitle">REPOSITÓRIO DIGITAL</a>
+      <div class="header-social">
+        <a href="https://www.facebook.com/pg/CasaManuelTeixeiraGomes" target="_blank" rel="noopener" class="social-fb" title="Facebook">f</a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener" class="social-yt" title="YouTube">▶</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVEGAÇÃO -->
+  <nav class="site-nav" aria-label="Navegação principal">
+    <div class="nav-inner">
+      <div class="nav-item">
+        <a href="{{BASE}}index.html">Entrada</a>
+      </div>
+      <div class="nav-item">
+        <span>Obras</span>
+        <div class="dropdown">
+          <a href="{{BASE}}pages/livros.html">Livros</a>
+          <a href="{{BASE}}pages/artigos.html">Artigos</a>
+          <a href="{{BASE}}pages/teatro.html">Teatro</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span>Estudos</span>
+        <div class="dropdown">
+          <a href="{{BASE}}pages/bibliografia-especifica.html">Bibliografia Específica</a>
+          <a href="{{BASE}}pages/estudos-biograficos.html">Estudos Biográficos</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span>Iconografia</span>
+        <div class="dropdown">
+          <a href="{{BASE}}pages/fotografias.html">Fotografias</a>
+          <a href="{{BASE}}pages/retratos-e-desenhos.html">Retratos e Desenhos</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span>Imprensa</span>
+        <div class="dropdown">
+          <a href="{{BASE}}pages/jornais.html">Jornais</a>
+          <a href="{{BASE}}pages/ficcoes.html">Ficções</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span>Arquivos</span>
+        <div class="dropdown">
+          <a href="{{BASE}}pages/fundacao-mario-soares.html">Fundação Mário Soares</a>
+          <a href="{{BASE}}pages/biblioteca-nacional.html">Biblioteca Nacional</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span>Coleções</span>
+        <div class="dropdown">
+          <a href="{{BASE}}pages/quadros.html">Quadros</a>
+          <a href="{{BASE}}pages/pecas-decorativas.html">Peças Decorativas</a>
+          <a href="{{BASE}}pages/livros-colecao.html">Livros</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span>Multimédia</span>
+        <div class="dropdown">
+          <a href="{{BASE}}pages/rtp-arquivos.html">RTP-Arquivos</a>
+          <a href="{{BASE}}pages/icia.html">ICIA</a>
+          <a href="{{BASE}}pages/casa-mtg-videos.html">Casa MTG</a>
+          <a href="{{BASE}}pages/museu-de-portimao.html">Museu de Portimão</a>
+          <a href="{{BASE}}pages/outros-videos.html">Outros Vídeos</a>
+          <a href="{{BASE}}pages/podcasts.html">Podcasts</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="{{BASE}}pages/casa-mtg.html">Casa MTG</a>
+      </div>
+      <div class="nav-item">
+        <a href="{{BASE}}pages/contacto.html">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="page-content">
+    {{CONTENT}}
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="mailto:">Contacto por E-mail</a>
+      <span class="copyright">© 2020 por Carlos Osório</span>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox-overlay" id="lightbox-overlay">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Fechar">&times;</button>
+      <img src="" alt="" id="lightbox-img">
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <script src="{{BASE}}js/main.js"></script>
+</body>
+</html>
